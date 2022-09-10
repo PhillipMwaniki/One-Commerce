@@ -6,18 +6,18 @@ import Card from "@/Components/Card.vue";
 </script>
 
 <template>
-    <Head title="Dashboard" />
+    <Head title="Roles" />
 
     <AuthenticatedLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Dashboard
+                Roles
             </h2>
         </template>
 
         <Container>
             <Card>
-                You're logged in!
+                Roles
             </Card>
         </Container>
     </AuthenticatedLayout>

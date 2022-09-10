@@ -30,6 +30,9 @@ const showingNavigationDropdown = ref(false);
                                 <NavLink :href="route('admin.dashboard')" :active="route().current('admin.dashboard')">
                                     Dashboard
                                 </NavLink>
+                                <NavLink :href="route('admin.roles.index')" :active="route().current('admin.roles.index')">
+                                    Roles
+                                </NavLink>
                             </div>
                         </div>
 
@@ -103,7 +106,9 @@ const showingNavigationDropdown = ref(false);
 
             <!-- Page Content -->
             <main>
-                <slot />
+                <div class="py-12">
+                    <slot />
+                </div>
             </main>
         </div>
     </div>
